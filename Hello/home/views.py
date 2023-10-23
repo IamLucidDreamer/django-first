@@ -9,10 +9,10 @@ def index(request):
     }
     return render(request , "index.html",context )
 def about(request):
-    return HttpResponse('this is about')
+    return render(request , "about.html" )
 
 def services(request):
-    return HttpResponse('this is services')
+    return render(request , "services.html" )
 
 def contact(request):
-    return HttpResponse('this is contact')
+    return render(request , "contact.html" )
